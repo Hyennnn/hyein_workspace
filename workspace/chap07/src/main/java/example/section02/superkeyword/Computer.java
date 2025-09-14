@@ -1,4 +1,4 @@
-package section02.superkeyword;
+package example.section02.superkeyword;
 
 import java.util.Date;
 

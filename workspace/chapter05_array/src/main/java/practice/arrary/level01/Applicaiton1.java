@@ -1,4 +1,4 @@
-package practice.level01;
+package practice.arrary.level01;
 
 public class Applicaiton1 {
     public static void main(String[] args) {

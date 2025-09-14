@@ -1,4 +1,4 @@
-package example.section01.string;
+package example.section02.string;
 import java.util.StringTokenizer;
 
 public class Application3 {

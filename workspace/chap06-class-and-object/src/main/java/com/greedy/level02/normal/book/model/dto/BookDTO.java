@@ -1,4 +1,4 @@
-package practice.level01;
+package com.greedy.level02.normal.book.model.dto;
 
 public class BookDTO {
 
@@ -9,13 +9,11 @@ public class BookDTO {
     private double discountRate;
 
     public BookDTO() {
-        this.title = "";
-        this.publisher = "";
-        this.author = "";
+        this.title = null;
+        this.publisher = null;
+        this.author = null;
         this.price = 0;
         this.discountRate = 0;
-
-        System.out.println(this.title + ", " +  this.author + ", " + this.price + ", " + this.discountRate);
     }
 
     public BookDTO(String title, String publisher, String author) {
@@ -29,7 +27,6 @@ public class BookDTO {
         this(title, publisher, author);
         this.price = price;
         this.discountRate = discountRate;
-        System.out.println(title + ", " + publisher + ", " + author + ", " + price  + ", " + discountRate);
 
     }
 
@@ -71,5 +68,9 @@ public class BookDTO {
 
     public void setDiscountRate(double discountRate) {
         this.discountRate = discountRate;
+    }
+
+    public String printInformation() {
+        return title + ", " + publisher + ", " + author + ", " + price  + ", " + discountRate;
     }
 }

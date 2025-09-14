@@ -1,4 +1,4 @@
-package example.section01.string;
+package example.section02.string;
 
 public class Application1 {
     public static void main(String[] args) {

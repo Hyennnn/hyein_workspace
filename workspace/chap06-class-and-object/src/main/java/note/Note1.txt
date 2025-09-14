@@ -1,0 +1,18 @@
+1. 변수
+int num = 10;
+하나의 공간에 하나의 타입 값
+
+2. 기본 자료형 배열
+int[] arr = new int[5];
+n개의 공간 하나의 타입 값 묶어서
+
+3. 클래스 자료형(사용자 정의 자료형)
+Book book - new Book();
+User user = new User();
+여러 타입 묶어서
+
+4. 클래스 자료형 배열
+Car[] carArray = new Car[5];
+
+stack 영억에 carArray 주소값이 생김
+heep 영역에 carArray 주소값의 래퍼런스 배열이 생김

@@ -1,20 +1,19 @@
-package example.section02.encapsulation.problem1;
+package example.section02.encapsulation.problem2;
 
 public class Monster {
-    String name;
+    // String name;
+    String kinds;
     int hp;
-    int mp;
 
-
-    // 메소드
-    public void setHp(int hp) {
-      if (hp > 0) {
-          // 여기서 this : 인스턴스 변수가 생성 되었을 때 자신의 주소를 저장하는 래퍼런스 변수
-          this.hp = hp;
-          System.out.println("양수 값이 입력 되어 몬스터의 체력을 입력 값으로 변경");
-      } else {
-          this.hp = 0;
-          System.out.println("음수 값이 입력 되어 몬스터의 체력을 0으로 변경");
-      }
+    public void setInfo(String info) {
+        // name 에서 kinds를 바꾸게 되더라도 main에서 코드를 수정할 필요가 없음!
+        // this.name = info;
+        this.kinds = info;
     }
+
+    public String getInfo() {
+//        return this.name;
+        return this.kinds;
+    }
+
 }

@@ -1,4 +1,4 @@
-package practice.level02;
+package practice.arrary.level02;
 
 import java.util.Arrays;
 import java.util.Scanner;

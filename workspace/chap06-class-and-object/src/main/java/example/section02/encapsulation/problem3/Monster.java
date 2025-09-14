@@ -1,8 +1,16 @@
-package example.section02.encapsulation.problem1;
+package example.section02.encapsulation.problem3;
 
+// 클래스 접근 제한자
+// public, defualt만 사용가능하다.
 public class Monster {
-    String name;
-    int hp;
+    // 접근 제한자
+    // 클래스, 클래스의 멤버(필드,메소드)에 참조 연산자로 접근할 수 있는 범위
+    // public, protected, default, private
+    //    String name;    // (default) 접근제어자 : 같은 클래스, 같은 패키지에서만 사용할 수 있음
+
+    private String name;
+    private int hp;
+
 
     // 메소드
     public void setHp(int hp) {
@@ -15,4 +23,20 @@ public class Monster {
           System.out.println("음수 값이 입력 되어 몬스터의 체력을 0으로 변경");
       }
     }
+
+    public int getHp() {
+        return hp;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+
+
+
 }

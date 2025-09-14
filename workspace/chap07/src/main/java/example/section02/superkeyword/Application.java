@@ -1,4 +1,4 @@
-package section02.superkeyword;
+package example.section02.superkeyword;
 
 public class Application {
     public static void main(String[] args) {

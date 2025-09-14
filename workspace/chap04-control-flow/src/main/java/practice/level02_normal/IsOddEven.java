@@ -1,10 +1,10 @@
 package practice.level02_normal;
 
-public class is_odd_even {
+public class IsOddEven {
 
     public void isOddEven(int number) {
 
-        if (number >= 10) {
+        if ( 0 < number &&  number<= 10 ) {
             if(number % 2 == 0){
                 System.out.println("짝수다.");
             } else {
