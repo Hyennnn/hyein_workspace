@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.section01.jupiter.JupiterAssertionTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2025-09-19T00:39:10.710Z" hostname="DESKTOP-TMG3I7N" time="0.024">
+  <properties/>
+  <testcase name="동시에 여러 값 검증" classname="com.example.section01.jupiter.JupiterAssertionTests" time="0.024">
+    <failure message="org.opentest4j.MultipleFailuresError: 그룹화 된 테스트의 이름(테스트 실패 시 보여주는 부분 (1 failure)&#13;&#10;&#9;org.opentest4j.AssertionFailedError: expected: &lt;&gt; but was: &lt;길동&gt;" type="org.opentest4j.MultipleFailuresError">org.opentest4j.MultipleFailuresError: 그룹화 된 테스트의 이름(테스트 실패 시 보여주는 부분 (1 failure)
+	org.opentest4j.AssertionFailedError: expected: &lt;&gt; but was: &lt;길동&gt;
+	at app//org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:80)
+	at app//org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:44)
+	at app//org.junit.jupiter.api.Assertions.assertAll(Assertions.java:2957)
+	at app//com.example.section01.jupiter.JupiterAssertionTests.testAssertAll(JupiterAssertionTests.java:49)
+	at java.base@21.0.8/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@21.0.8/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base@21.0.8/java.util.ArrayList.forEach(ArrayList.java:1596)
+	Suppressed: org.opentest4j.AssertionFailedError: expected: &lt;&gt; but was: &lt;길동&gt;
+		at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+		at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+		at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+		at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+		at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+		at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1141)
+		at app//com.example.section01.jupiter.JupiterAssertionTests.lambda$testAssertAll$0(JupiterAssertionTests.java:51)
+		at app//org.junit.jupiter.api.AssertAll.lambda$assertAll$0(AssertAll.java:68)
+		at java.base@21.0.8/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+		at java.base@21.0.8/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+		at java.base@21.0.8/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+		at java.base@21.0.8/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+		at java.base@21.0.8/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+		at java.base@21.0.8/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+		at java.base@21.0.8/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+		at app//org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:77)
+		... 6 more
+Caused by: org.opentest4j.AssertionFailedError: expected: &lt;&gt; but was: &lt;길동&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1141)
+	at app//com.example.section01.jupiter.JupiterAssertionTests.lambda$testAssertAll$0(JupiterAssertionTests.java:51)
+	at app//org.junit.jupiter.api.AssertAll.lambda$assertAll$0(AssertAll.java:68)
+	at java.base@21.0.8/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base@21.0.8/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base@21.0.8/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base@21.0.8/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base@21.0.8/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base@21.0.8/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base@21.0.8/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at app//org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:77)
+	... 6 more
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

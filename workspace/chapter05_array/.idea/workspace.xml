@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d09a0961-8bad-4344-b6cf-0ca08bd852a0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../chap04-control-flow/src/main/java/practice/level02_normal/Application1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04-control-flow/src/main/java/practice/level02_normal/Application2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04-control-flow/src/main/java/practice/level02_normal/CaculateSalary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04-control-flow/src/main/java/practice/level02_normal/CalculateBMI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04-control-flow/src/main/java/practice/level02_normal/CalculateNums.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04-control-flow/src/main/java/practice/level02_normal/FruitPrice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04-control-flow/src/main/java/practice/level02_normal/IsOddEven.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04-control-flow/src/main/java/practice/level02_normal/StrArr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04-control-flow/src/main/java/practice/level02_normal/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04-control-flow/src/main/java/section02/looping/C_while.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04-control-flow/src/main/java/section03/branching/A_break.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04-control-flow/src/main/java/section03/branching/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04-control-flow/src/main/java/section03/branching/B_continue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/section01/array/Application1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/section01/array/Application2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/section01/array/Application3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/section01/array/Application4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/section02/dimensional/Applicaion1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/section02/dimensional/Application2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/section02/dimensional/Application3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/section03/copy/Application1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/section03/copy/Application2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/section03/copy/Application3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practice/arrary/level01/Applicaiton1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practice/arrary/level01/Application2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practice/arrary/level02/Applicaion2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practice/arrary/level02/Application1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practice/arrary/level03/Application1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practice/arrary/level04/Application1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practice/arrary/level04/Application2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practice/arrary2/level01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practice/arrary2/level03.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Hyennnn&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Hyennnn/hyein_workspace&quot;,
+    &quot;accountId&quot;: &quot;24c26adc-05bd-4695-bc50-de72a1eb8dd6&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="32RK72GfvcivEXA42AJV52DQla9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build chapter05_array.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.chapter05_array [:example.section01.array.Application1.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.chapter05_array [:example.section01.array.Application2.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.chapter05_array [:example.section01.array.Application3.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.chapter05_array [:example.section01.array.Application4.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.chapter05_array [:example.section02.dimensional.Applicaion1.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.chapter05_array [:example.section02.dimensional.Application2.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.chapter05_array [:example.section03.copy.Application1.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.chapter05_array [:example.section03.copy.Application2.main()].executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.chapter05_array [:example.section03.copy.Application3.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.chapter05_array [:practice.arrary.level04.Application1.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.chapter05_array [:practice.arrary.level04.Application2.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.chapter05_array [:practice.arrary2.level01.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.chapter05_array [:practice.arrary2.level03.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.chapter05_array [:practice.level01.Applicaiton1.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.chapter05_array [:practice.level01.Application2.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.chapter05_array [:practice.level02.Applicaion2.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.chapter05_array [:practice.level02.Application1.main()].executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.chapter05_array [:practice.level03.Application1.main()].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Playdata/hyein_workspace/workspace/chapter05_array/src/main/java/org/example/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Application.Application2">
+    <configuration name="Application1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practice.level03.Application1" />
+      <module name="chapter05_array.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="practice.level03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practice.arrary.level04.Application2" />
+      <module name="chapter05_array.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="practice.arrary.level04.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="level01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practice.arrary2.level01" />
+      <module name="chapter05_array.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="practice.arrary2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="level03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practice.arrary2.level03" />
+      <module name="chapter05_array.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="practice.arrary2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="practice.arrary.level04.Application1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practice.arrary.level04.Application1" />
+      <module name="chapter05_array.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="practice.arrary.level04.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application2" />
+        <item itemvalue="Application.practice.arrary.level04.Application1" />
+        <item itemvalue="Application.level03" />
+        <item itemvalue="Application.level01" />
+        <item itemvalue="Application.Application1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.25557.131" />
+        <option value="bundled-js-predefined-d6986cc7102b-b598e85cdad2-JavaScript-IU-252.25557.131" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d09a0961-8bad-4344-b6cf-0ca08bd852a0" name="Changes" comment="" />
+      <created>1757377778607</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1757377778607</updated>
+      <workItem from="1757377779970" duration="8534000" />
+      <workItem from="1757387207569" duration="4535000" />
+      <workItem from="1757395548127" duration="14841000" />
+      <workItem from="1757414992820" duration="1880000" />
+      <workItem from="1757461882901" duration="1498000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/practice/arrary2/level03.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/practice/arrary/level02/Applicaion2.java</url>
+          <line>6</line>
+          <properties class="practice.arrary.level02.Applicaion2">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

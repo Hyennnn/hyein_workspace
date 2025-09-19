@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2aec2e34-637c-4324-aa0e-a755d6b17fa6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../chap04-control-flow/src/main/java/practice/level02_normal/Application1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04-control-flow/src/main/java/practice/level02_normal/Application2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04-control-flow/src/main/java/practice/level02_normal/CaculateSalary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04-control-flow/src/main/java/practice/level02_normal/CalculateBMI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04-control-flow/src/main/java/practice/level02_normal/CalculateNums.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04-control-flow/src/main/java/practice/level02_normal/FruitPrice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04-control-flow/src/main/java/practice/level02_normal/IsOddEven.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04-control-flow/src/main/java/practice/level02_normal/StrArr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04-control-flow/src/main/java/practice/level02_normal/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04-control-flow/src/main/java/section02/looping/C_while.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04-control-flow/src/main/java/section03/branching/A_break.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04-control-flow/src/main/java/section03/branching/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap04-control-flow/src/main/java/section03/branching/B_continue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap06-class-and-object/src/main/java/com/greedy/level02/normal/book/model/dto/BookDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap06-class-and-object/src/main/java/com/greedy/level02/normal/book/run/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap06-class-and-object/src/main/java/example/section01/user_type/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap06-class-and-object/src/main/java/example/section01/user_type/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap06-class-and-object/src/main/java/example/section02/encapsulation/problem1/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap06-class-and-object/src/main/java/example/section02/encapsulation/problem1/Monster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap06-class-and-object/src/main/java/example/section02/encapsulation/problem2/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap06-class-and-object/src/main/java/example/section02/encapsulation/problem2/Monster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap06-class-and-object/src/main/java/example/section02/encapsulation/problem3/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap06-class-and-object/src/main/java/example/section02/encapsulation/problem3/Monster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap06-class-and-object/src/main/java/example/section03/abstraction/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap06-class-and-object/src/main/java/example/section03/abstraction/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap06-class-and-object/src/main/java/example/section03/abstraction/CarRacer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap06-class-and-object/src/main/java/example/section03/dto/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap06-class-and-object/src/main/java/example/section03/dto/MemberDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap06-class-and-object/src/main/java/example/section04/constructor/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap06-class-and-object/src/main/java/example/section04/constructor/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap06-class-and-object/src/main/java/example/section05/overloading/OverloadingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap06-class-and-object/src/main/java/example/section05/parameter/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap06-class-and-object/src/main/java/example/section05/parameter/ParameterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap06-class-and-object/src/main/java/example/section05/parameter/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap06-class-and-object/src/main/java/example/section06/finalkeyword/FinalFieldTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap06-class-and-object/src/main/java/example/section06/statikeyword/StaticFieldTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap06-class-and-object/src/main/java/example/section07/initblock/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap06-class-and-object/src/main/java/example/section07/initblock/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap06-class-and-object/src/main/java/example/section08/objectarry/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap06-class-and-object/src/main/java/example/section08/objectarry/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap06-class-and-object/src/main/java/note/Note.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap06-class-and-object/src/main/java/note/Note1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/section01/extexd/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/section01/extexd/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/section01/extexd/FireCar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/section01/extexd/RacingCar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/section02/superkeyword/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/section02/superkeyword/Computer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/section02/superkeyword/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/section03/overriding/SubClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/section03/overriding/SuperClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chapter05_array/src/main/java/example/section01/array/Application1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chapter05_array/src/main/java/example/section01/array/Application2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chapter05_array/src/main/java/example/section01/array/Application3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chapter05_array/src/main/java/example/section01/array/Application4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chapter05_array/src/main/java/example/section02/dimensional/Applicaion1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chapter05_array/src/main/java/example/section02/dimensional/Application2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chapter05_array/src/main/java/example/section02/dimensional/Application3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chapter05_array/src/main/java/example/section03/copy/Application1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chapter05_array/src/main/java/example/section03/copy/Application2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chapter05_array/src/main/java/example/section03/copy/Application3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chapter05_array/src/main/java/practice/arrary/level01/Applicaiton1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chapter05_array/src/main/java/practice/arrary/level01/Application2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chapter05_array/src/main/java/practice/arrary/level02/Applicaion2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chapter05_array/src/main/java/practice/arrary/level02/Application1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chapter05_array/src/main/java/practice/arrary/level03/Application1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chapter05_array/src/main/java/practice/arrary/level04/Application1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chapter05_array/src/main/java/practice/arrary/level04/Application2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chapter05_array/src/main/java/practice/arrary2/level01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chapter05_array/src/main/java/practice/arrary2/level03.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Hyennnn"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Hyennnn/hyein_workspace",
+    "accountId": "24c26adc-05bd-4695-bc50-de72a1eb8dd6"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="32X2ZsgsdXch8FNkov1ok1qVdWA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.chap07 [:example.section01.extexd.Application.main()].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "develop",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/Playdata/hyein_workspace/workspace/chap07/src/main/java/org/example/Main.java",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="example.section01.extexd.Application" />
+      <module name="chap07.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="example.section01.extexd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.25557.131" />
+        <option value="bundled-js-predefined-d6986cc7102b-b598e85cdad2-JavaScript-IU-252.25557.131" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2aec2e34-637c-4324-aa0e-a755d6b17fa6" name="Changes" comment="" />
+      <created>1757552656645</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1757552656645</updated>
+      <workItem from="1757552658017" duration="8382000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
