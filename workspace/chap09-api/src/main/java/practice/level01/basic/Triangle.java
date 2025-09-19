@@ -1,6 +1,6 @@
 package practice.level01.basic;
 
-public class Triangle  extends Shape implements Resizable{
+public class Triangle  extends Shape{
     private double base;
     private double height;
     private double side1;
@@ -53,11 +53,6 @@ public class Triangle  extends Shape implements Resizable{
 
     public void setSide3(double side3) {
         this.side3 = side3;
-    }
-
-    @Override
-    public void resize(double factor) {
-
     }
 
     @Override

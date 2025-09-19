@@ -1,6 +1,6 @@
 package practice.level01.basic;
 
-public class Rectangle  extends Shape implements Resizable{
+public class Rectangle  extends Shape {
     private double width;
     private double height;
 
@@ -25,10 +25,6 @@ public class Rectangle  extends Shape implements Resizable{
         this.height = height;
     }
 
-    @Override
-    public void resize(double factor) {
-
-    }
 
     @Override
     double calculateArea() {

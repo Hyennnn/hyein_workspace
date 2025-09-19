@@ -1,6 +1,6 @@
 package practice.level01.basic;
 
-public class Circle extends Shape implements Resizable {
+public class Circle extends Shape {
     private double radius;  // 반지름
 
     public Circle(double radius) {
@@ -15,10 +15,6 @@ public class Circle extends Shape implements Resizable {
         this.radius = radius;
     }
 
-    @Override
-    public void resize(double factor) {
-
-    }
 
     @Override
     double calculateArea() {

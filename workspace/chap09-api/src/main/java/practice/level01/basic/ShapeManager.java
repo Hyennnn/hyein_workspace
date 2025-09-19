@@ -2,7 +2,7 @@ package practice.level01.basic;
 
 import java.util.Arrays;
 
-public class ShapeManager {
+public class ShapeManager implements Resizable {
     private Shape[] shapes = new Shape[10];
     private int index;
 
@@ -34,16 +34,31 @@ public class ShapeManager {
 
     public double getTotalArea() {
         /* 배열에 저장 된 모든 도형의 넓이를 더해서 반환 */
-//        int areaSum = 0;
-//        for (int i = 0; i < this.shapes.length; i++) {
-//            // areaSum += shapes[i].calculateArea();
-//            System.out.println(shapes[i]);
-//        }
-        return 0;
+        int areaSum = 0;
+        for (int i = 0; i < this.shapes.length; i++) {
+            // areaSum += shapes[i].calculateArea();
+            if (this.shapes[i] != null) {
+                areaSum += this.shapes[i].calculateArea();
+            }
+
+        }
+        return areaSum;
     }
 
     public double getTotalPerimeter() {
         /* 배열에 저장 된 모든 도형의 둘레를 더해서 반환 */
-        return 0;
+        int perimeterSum = 0;
+        for (int i = 0; i < this.shapes.length; i++) {
+            if (this.shapes[i] != null) {
+                perimeterSum += this.shapes[i].calculatePerimeter();
+            }
+        }
+
+        return perimeterSum;
+    }
+
+    @Override
+    public void resize(double factor) {
+
     }
 }
