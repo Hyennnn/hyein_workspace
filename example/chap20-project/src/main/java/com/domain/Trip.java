@@ -1,0 +1,69 @@
+package com.domain;
+
+import java.util.List;
+
+public class Trip {
+
+    private int sequence;
+    private String country;
+    private String city;
+    private String startDt;
+    private String endDt;
+    private List<Plan> planList;
+
+    public Trip(int sequence, String country, String city, String startDt, String endDt) {
+        this.sequence = sequence;
+        this.country = country;
+        this.city = city;
+        this.startDt = startDt;
+        this.endDt = endDt;
+    }
+
+    public int getSequence() {
+        return sequence;
+    }
+
+    public void setSequence(int sequence) {
+        this.sequence = sequence;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getStartDt() {
+        return startDt;
+    }
+
+    public void setStartDt(String startDt) {
+        this.startDt = startDt;
+    }
+
+    public String getEndDt() {
+        return endDt;
+    }
+
+    public void setEndDt(String endDt) {
+        this.endDt = endDt;
+    }
+
+    public List<Plan> getPlanList() {
+        return planList;
+    }
+
+    public void setPlanList(List<Plan> planList) {
+        this.planList = planList;
+    }
+}
