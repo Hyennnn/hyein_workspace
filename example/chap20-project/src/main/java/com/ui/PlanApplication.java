@@ -1,27 +1,45 @@
 package com.ui;
 
-import com.domain.Tag;
+import com.persistence.FilePlanStorage;
+import com.persistence.FileTripStorage;
+import com.persistence.PlanRepository;
+import com.persistence.TripRepository;
+import com.service.PlanService;
+import com.service.TripSservice;
+import com.service.UtilService;
 
 import java.util.Scanner;
 
 import static com.domain.Tag.*;
 
 public class PlanApplication {
-    private Scanner scanner;
+
+    protected final PlanService planService;
+    protected final Scanner scanner;
+    public final UtilService utilService = new UtilService();
+
+    public PlanApplication() {
+
+        PlanRepository planRepository = new PlanRepository(new FilePlanStorage());
+       // tripSservice = new TripSservice(tripRepository);
+        planService = new PlanService(planRepository);
+        scanner = new Scanner(System.in);
+    }
+
+
 
     public void addPlan() {
         System.out.println("================ADD PLAN===================");
 
-        System.out.println("날짜를 입력해 주세요.");
-        String planDt =  scanner.nextLine();
+        System.out.println("날짜를 입력해 주세요");
+        String planDt = scanner.nextLine();
 
-        // TODO: 입력한 날짜의 일정 list 가져오기
-
-        System.out.println("시간을 입력해 주세요.");
-        String planTm =  scanner.nextLine();
+        System.out.println("시간을 입력해 주세요");
+        String tm = scanner.nextLine();
 
         System.out.println("PLAN 내용을 입력해 주세요.");
         String planContents =  scanner.nextLine();
+
 
         System.out.println("태그를 선택해 주세요.");
         System.out.println("(0) 없음");
@@ -32,6 +50,7 @@ public class PlanApplication {
         System.out.println("(5) 테마/체험");
         System.out.println("(6) 술집(바)");
         System.out.println("(7) 숙소");
+
         int plantag = scanner.nextInt();
 
          switch (plantag) {
@@ -49,10 +68,20 @@ public class PlanApplication {
 
     public void updatePlan() {
         System.out.println("================UPDATE PLAN===================");
+        System.out.println("날짜를 입력해 주세요");
+        String planDt = scanner.nextLine();
+
+        System.out.println("수정할 PLAN의 번호를 입력해 주세요");
+        int planNUm = scanner.nextInt();
+
     }
 
     public void deletePlan() {
         System.out.println("================DELETE PLAN===================");
+        System.out.println("날짜를 입력해 주세요");
+        String planDt = scanner.nextLine();
 
+        System.out.println("삭제할 PLAN의 번호를 입력해 주세요");
+        int planNUm = scanner.nextInt();
     }
 }

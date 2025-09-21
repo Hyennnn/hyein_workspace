@@ -1,31 +1,36 @@
 package com.domain;
 
+import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.List;
+import java.util.Locale;
 
-public class Trip {
+public class Trip implements Serializable {
 
-    private int sequence;
+    private static final long serialVersionUID = 1L;
+    private  long sequenceCounter = 0;
+    private long sequence;
+
     private String country;
     private String city;
     private String startDt;
     private String endDt;
     private List<Plan> planList;
+    private List<LocalDate> betweenDtList;
 
-    public Trip(int sequence, String country, String city, String startDt, String endDt) {
-        this.sequence = sequence;
+    public Trip(String country, String city, String startDt, String endDt) {
+        this.sequence = ++sequenceCounter;
         this.country = country;
         this.city = city;
         this.startDt = startDt;
         this.endDt = endDt;
     }
 
-    public int getSequence() {
+    public long getSequence() {
         return sequence;
     }
 
-    public void setSequence(int sequence) {
-        this.sequence = sequence;
-    }
+
 
     public String getCountry() {
         return country;
@@ -66,4 +71,5 @@ public class Trip {
     public void setPlanList(List<Plan> planList) {
         this.planList = planList;
     }
+
 }
