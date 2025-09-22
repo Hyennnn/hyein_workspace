@@ -10,13 +10,13 @@ import java.time.LocalDate;
 import java.util.List;
 
 public class Application extends PlanApplication {
-    protected static TripSservice tripSservice;
+//    protected static TripSservice tripSservice;
     private static List<Trip> tripList;
     private static List<LocalDate> tripBetweenList;
     int no = 1;
     public Application() {
-        TripRepository tripRepository = new TripRepository(new FileTripStorage());
-        tripSservice = new TripSservice(tripRepository);
+//        TripRepository tripRepository = new TripRepository(new FileTripStorage());
+//        tripSservice = new TripSservice(tripRepository);
     }
 
 
@@ -133,6 +133,10 @@ public class Application extends PlanApplication {
                         + t.getStartDt() + " ~ " + t.getEndDt() );
                 no++;
             }
+            if (tripList.size() <= 0) {
+                return;
+            }
+
             System.out.println("(0)GO MY TRIP LIST");
             System.out.println("삭제할 TRIP의 번호를 선택해 주세요.");
             int choiceNum = scanner.nextInt();
@@ -144,6 +148,8 @@ public class Application extends PlanApplication {
                     // 번호 넘겨주기 > 비지니스 로직에서 번호 확인 처리
                         tripSservice.deleteByTripId(choiceNum);
                 }
+
+
 
             } catch (Exception e) {
                 System.out.println(e.getMessage());
@@ -213,7 +219,7 @@ public class Application extends PlanApplication {
                         return;
                     }
                     case 2 -> updateTrip((int)trip.getSequence());
-                    case 3 -> addPlan();
+                    case 3 -> addPlan(tripId);
               //      case 4 -> updatePlan();
                     case 5 -> deletePlan();
                     default -> System.out.println("잘못된 입력입니다. 다시 입력해 주세요.");
@@ -238,12 +244,15 @@ public class Application extends PlanApplication {
             tripSservice.updateTrip(tripId, updateTrip);
 
             // 데이터 저장
-            System.out.println("---------------MY TRIP이 생성 --------------");
+            System.out.println("---------------MY TRIP 수정 --------------");
             System.out.println("[" + trip.getCity() + "(" + trip.getCountry() + ")]" );
             System.out.println(trip.getStartDt() + " ~ " + trip.getEndDt());
             System.out.println("-----------------------------------------");
             System.out.println();
             System.out.println();
+
+            return;
+
         }
 
     }

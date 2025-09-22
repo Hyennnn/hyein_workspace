@@ -8,7 +8,7 @@ import java.util.Locale;
 public class Trip implements Serializable {
 
     private static final long serialVersionUID = 1L;
-    private  long sequenceCounter = 0;
+    private static long sequenceCounter = 0;
     private long sequence;
 
     private String country;
