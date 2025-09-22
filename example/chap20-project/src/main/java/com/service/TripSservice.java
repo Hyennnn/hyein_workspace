@@ -26,18 +26,26 @@ public class TripSservice {
         return tripRepository.findTripByTripId(tripId);
     }
 
-    public void deleteByTripId(int choiceNum) {
-        checkTripId(choiceNum);
+    public void deleteByTripId(int tripId) {
+        checkTripId(tripId);
 
-        tripRepository.deleteTrip(choiceNum);
+        tripRepository.deleteTrip(tripId);
         System.out.println("삭제되었습니다.");
     }
 
-    public void checkTripId(int choiceNum) {
-        Trip trip = tripRepository.findTripByTripId(choiceNum);
+    public void checkTripId(int tripId) {
+        Trip trip = tripRepository.findTripByTripId(tripId);
         if (trip == null) {
             throw new IllegalArgumentException("해당 TRIP을 찾을 수 없습니다.");
         }
     }
 
+    public void updateTrip(int tripId, Trip trip) {
+        Trip beforeTrip = tripRepository.findTripByTripId(tripId);
+        if (beforeTrip == null) {
+            throw new IllegalArgumentException("해당 TRIP을 찾을 수 없습니다.");
+        }
+
+        tripRepository.updateTripByTripId(tripId, trip);
+    }
 }

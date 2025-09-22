@@ -66,7 +66,7 @@ public class PlanApplication {
 
     }
 
-    public void updatePlan() {
+    public void updatePlan(String type) {
         System.out.println("================UPDATE PLAN===================");
         System.out.println("날짜를 입력해 주세요");
         String planDt = scanner.nextLine();

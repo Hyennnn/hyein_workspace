@@ -43,4 +43,10 @@ public class TripRepository {
     }
 
 
+    public void updateTripByTripId(int tripId, Trip trip) {
+        System.out.println("TripRepository-updateTripByTripId");
+        // 데이터 수정해주기
+
+
+    }
 }
