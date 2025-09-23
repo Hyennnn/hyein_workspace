@@ -45,8 +45,18 @@ public class TripRepository {
 
     public void updateTripByTripId(int tripId, Trip trip) {
         System.out.println("TripRepository-updateTripByTripId");
-        // 데이터 수정해주기
 
+        for(int i = 0; i < tripList.size(); i++) {
+           Trip target = tripList.get(i);
+            if(target.getSequence() == tripId) {
+                target.setCountry(trip.getCountry());
+                target.setCity(trip.getCity());
+                target.setStartDt(trip.getStartDt());
+                target.setEndDt(trip.getEndDt());
+                tripStorage.saveTrip(tripList);
+                break;
+            }
+        }
 
     }
 }

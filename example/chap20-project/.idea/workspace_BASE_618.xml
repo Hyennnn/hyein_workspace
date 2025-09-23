@@ -4,10 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="73a30f19-bbb3-4f5c-821b-83aecc323aaa" name="Changes" comment="" />
-=======
     <list default="true" id="73a30f19-bbb3-4f5c-821b-83aecc323aaa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../data_structure/cha01-data-structure/src/main/java/com/example/section01/timecomplexity/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../data_structure/cha01-data-structure/src/main/java/com/example/section02/list/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../data_structure/cha01-data-structure/src/main/java/com/example/section02/list/MyArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../data_structure/cha01-data-structure/src/main/java/com/example/section02/list/MyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../data_structure/cha01-data-structure/src/main/java/com/example/section03/stack/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../data_structure/cha01-data-structure/src/main/java/com/example/section03/stack/ArrayStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../data_structure/cha01-data-structure/src/main/java/com/example/section03/stack/Practice1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../data_structure/cha01-data-structure/src/main/java/com/example/section04/queue/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../data_structure/cha01-data-structure/src/main/java/com/example/section04/queue/ArrayQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../data_structure/cha01-data-structure/src/main/java/com/example/section04/queue/Practice1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../data_structure/cha01-data-structure/src/main/java/com/example/section05/deque/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../data_structure/cha01-data-structure/src/main/java/com/example/section05/deque/Practice1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../data_structure/cha01-data-structure/src/test/java/com/example/section03/stack/Practice1Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../data_structure/cha01-data-structure/src/test/java/com/example/section04/queue/Practice1Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../data_structure/cha01-data-structure/src/test/java/com/example/section05/deque/Practice1Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap19-junit/.gradle/8.14/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../chap19-junit/.gradle/8.14/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap19-junit/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chap19-junit/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.14/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.14/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.14/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14/fileHashes/fileHashes.bin" afterDir="false" />
@@ -15,19 +29,19 @@
       <change beforePath="$PROJECT_DIR$/.gradle/8.14/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/domain/Trip.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/domain/Trip.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ui/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ui/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Application.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Application.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Application.class.uniqueId0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/db/tripDB.dat" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/db/tripDB.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/domain/Plan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/domain/Plan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/domain/Trip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/domain/Trip.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/persistence/TripRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/persistence/TripRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/TripSservice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/TripSservice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ui/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ui/PlanApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ui/PlanApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/chap14-enum/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../workspace/chap14-enum/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace/chap15-lambda/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../workspace/chap15-lambda/.idea/workspace.xml" afterDir="false" />
     </list>
->>>>>>> 32e65dccea41dd3d80734701f38ad84025ac7628
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -183,6 +197,14 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.25557.131" />
+        <option value="bundled-js-predefined-d6986cc7102b-b598e85cdad2-JavaScript-IU-252.25557.131" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -194,7 +216,6 @@
       <workItem from="1758263550684" duration="8305000" />
       <workItem from="1758498504463" duration="2613000" />
       <workItem from="1758528975456" duration="2780000" />
-      <workItem from="1758587643185" duration="32000" />
     </task>
     <servers />
   </component>
@@ -210,6 +231,11 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ui/Application.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/persistence/FileTripStorage.java</url>
           <line>8</line>
           <option name="timeStamp" value="10" />
@@ -217,7 +243,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
           <line>5</line>
-          <properties class="org.example.Main">
+          <properties class="org.example.Main" method="main">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -226,7 +252,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/service/TripSservice.java</url>
           <line>19</line>
-          <properties class="com.service.TripSservice">
+          <properties class="com.service.TripSservice" method="addTrip">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -235,7 +261,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/persistence/TripRepository.java</url>
           <line>22</line>
-          <properties class="com.persistence.TripRepository">
+          <properties class="com.persistence.TripRepository" method="insertTrip">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -244,7 +270,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/persistence/FileTripStorage.java</url>
           <line>21</line>
-          <properties class="com.persistence.FileTripStorage">
+          <properties class="com.persistence.FileTripStorage" method="loadTripList">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
