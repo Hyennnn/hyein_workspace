@@ -4,6 +4,7 @@ import com.domain.Trip;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class TripRepository {
@@ -13,7 +14,6 @@ public class TripRepository {
     public TripRepository(TripStorage tripStorage) {
         this.tripStorage = tripStorage;
         this.tripList = tripStorage.loadTripList();
-       // this.tripList = new ArrayList<>();
     }
 
     public List<Trip> findAllTrip() {
@@ -22,12 +22,15 @@ public class TripRepository {
 
     public void insertTrip(Trip trip) {
         System.out.println("TripRepository-insertTrip");
-//        System.out.println(trip.getCity());
+        trip.setSequence(lastSequenceNumber() +1 );
         tripList.add(trip);
         tripStorage.saveTrip(tripList);
 
     }
 
+    public Integer lastSequenceNumber() {
+        return tripList.isEmpty() ? 0 : tripList.get(tripList.size()-1).getSequence();
+    }
     public Trip findTripByTripId(int tripId) {
         System.out.println("TripRepository-findTripByTripId");
         return tripList.stream()

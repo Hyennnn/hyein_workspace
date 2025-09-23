@@ -20,7 +20,6 @@ public class FileTripStorage implements TripStorage {
 
     @Override
     public List<Trip> loadTripList() {
-
         File file = new File(FILE_PATH);
         if (!file.exists()) return new ArrayList<>();
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file))) {

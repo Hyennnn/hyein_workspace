@@ -22,10 +22,4 @@ public enum Tag {
         return tagName;
     }
 
-    public static Tag validationTag(String type) {
-        return Arrays.stream(values())
-                .filter(t -> t.getTagName().equals(type))
-                .findAny()
-                .orElse(null);
-    }
 }

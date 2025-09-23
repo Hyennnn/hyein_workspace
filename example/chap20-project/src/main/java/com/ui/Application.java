@@ -1,5 +1,6 @@
 package com.ui;
 
+import com.domain.Plan;
 import com.domain.Trip;
 import com.persistence.FileTripStorage;
 import com.persistence.TripRepository;
@@ -10,15 +11,11 @@ import java.time.LocalDate;
 import java.util.List;
 
 public class Application extends PlanApplication {
-//    protected static TripSservice tripSservice;
     private static List<Trip> tripList;
     private static List<LocalDate> tripBetweenList;
-    int no = 1;
     public Application() {
-//        TripRepository tripRepository = new TripRepository(new FileTripStorage());
-//        tripSservice = new TripSservice(tripRepository);
-    }
 
+    }
 
     public static void run(Application application) {
         while (true) {
@@ -27,7 +24,6 @@ public class Application extends PlanApplication {
             for(Trip t : tripList) {
                 System.out.println(t.getSequence() + "-" + t.getCity() + "(" + t.getCountry() + "): "
                 + t.getStartDt() + " ~ " + t.getEndDt() );
-
             }
 
             System.out.println("=============================");
@@ -52,7 +48,7 @@ public class Application extends PlanApplication {
                         System.out.println("BYE~ :) ");
                         return;
                     }
-                    default -> System.out.println("잘못된 입력입니다. 다시 입력해 주세요.");
+                    default -> System.out.println("잘못된 입력입니다. 다시 입력해주세요.");
                 }
             } catch (Exception e) {
                 System.out.println("오류: " + e.getMessage());
@@ -66,20 +62,20 @@ public class Application extends PlanApplication {
         System.out.println("여행할 나라를 입력해주세요.");
         String country = scanner.nextLine();
 
-        System.out.println("여행지를 입력해주세요.");
+        System.out.println( country + "여행지를 입력해주세요.");
         String city = scanner.nextLine();
 
         String startDt = "";
         boolean checkDt = true;
         while (checkDt) {
-            System.out.println(city + " 출발일을 입력해주세요.(YYYY-MM-DD)");
+            System.out.println(city + "("+ country + ")" + " 출발일을 입력해주세요.(YYYY-MM-DD)");
             startDt = scanner.nextLine();
 
             // 날짜 체크
             if (utilService.checkDate(startDt)) {
                 checkDt = false;
             } else {
-                System.out.println("출발일을 다시 입력해 주세요.");
+                System.out.println("출발일을 다시 입력해주세요.");
             }
 
         }
@@ -99,11 +95,11 @@ public class Application extends PlanApplication {
                     checkDt = false;
                 }
             } else {
-                System.out.println("종료일을 다시 입력해 주세요.");
+                System.out.println("종료일을 다시 입력해주세요.");
             }
         }
 
-        // service
+
         return new Trip( country, city, startDt, endDt);
     }
 
@@ -114,7 +110,7 @@ public class Application extends PlanApplication {
         tripSservice.addTrip(trip);
 
         // 데이터 저장
-        System.out.println("---------------MY TRIP이 생성 --------------");
+        System.out.println("---------------MY TRIP 생성 --------------");
         System.out.println("[" + trip.getCity() + "(" + trip.getCountry() + ")]" );
         System.out.println(trip.getStartDt() + " ~ " + trip.getEndDt());
         System.out.println("-----------------------------------------");
@@ -124,14 +120,12 @@ public class Application extends PlanApplication {
     }
 
     public void deleteTrip() {
-        no = 1;
         System.out.println("======== DELETE TRIP ========");
         while (true) {
             tripList = tripSservice.findAllTrip();
             for(Trip t : tripList) {
                 System.out.println( t.getSequence() + "." + t.getCity() + "(" + t.getCountry() + "): "
                         + t.getStartDt() + " ~ " + t.getEndDt() );
-                no++;
             }
             if (tripList.size() <= 0) {
                 return;
@@ -160,14 +154,12 @@ public class Application extends PlanApplication {
     }
 
     public void choiceDetailTrip(String type) {
-        no = 1;
         while (true) {
             System.out.println("======== MY TRIP CHOICE TRIP ========");
             tripList = tripSservice.findAllTrip();
             for(Trip t : tripList) {
                 System.out.println( t.getSequence() + "." + t.getCity() + "(" + t.getCountry() + "): "
                         + t.getStartDt() + " ~ " + t.getEndDt() );
-                no++;
             }
             System.out.println("(0)GO MY TRIP LIST");
             System.out.println("TRIP의 번호를 선택해 주세요.");
@@ -201,8 +193,19 @@ public class Application extends PlanApplication {
                     + trip.getStartDt() + " ~ " + trip.getEndDt());
             System.out.println("==============================");
 
-            //tripBetweenList = UtilService.getBetweenDateArr(trip.getStartDt(), trip.getEndDt());
-            UtilService.getBetweenDateArr(trip.getStartDt(), trip.getEndDt()).forEach(System.out::println);
+            tripBetweenList = UtilService.getBetweenDateArr(trip.getStartDt(), trip.getEndDt());
+            //tilService.getBetweenDateArr(trip.getStartDt(), trip.getEndDt()).forEach(System.out::println);
+            List<Plan> planList = planService.findPlanByTripId(tripId);
+            for (LocalDate dt : tripBetweenList) {
+                System.out.println(dt.toString());
+
+                for(Plan plan : planList) {
+                    if(dt.toString().equals(plan.getPlanDate())) {
+                        System.out.println("-" + plan.getPlanTime() + " | " + plan.getContent() + "(" +plan.getTag()+ ")");
+                    }
+                }
+            }
+
             System.out.println("-------------------------------");
 
             System.out.println("(1)BACK");
@@ -216,13 +219,13 @@ public class Application extends PlanApplication {
             try {
                 switch (choice) {
                     case 1 -> {
-                        return;
+                        break;
                     }
                     case 2 -> updateTrip((int)trip.getSequence());
                     case 3 -> addPlan(tripId);
-              //      case 4 -> updatePlan();
+                    case 4 -> updatePlan(tripId);
                     case 5 -> deletePlan();
-                    default -> System.out.println("잘못된 입력입니다. 다시 입력해 주세요.");
+                    default -> System.out.println("잘못된 입력입니다. 다시 입력해주세요.");
                 }
             } catch (Exception e) {
                 System.out.println("오류:" +e.getMessage());
@@ -238,7 +241,6 @@ public class Application extends PlanApplication {
             System.out.println("-" + trip.getCity() + "(" + trip.getCountry() + "): "
                     + trip.getStartDt() + " ~ " + trip.getEndDt());
             System.out.println("================================");
-
 
             Trip updateTrip = validationTrip();
             tripSservice.updateTrip(tripId, updateTrip);
