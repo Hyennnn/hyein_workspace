@@ -41,10 +41,10 @@ public class Practice1 {
                 }
             } else {
                 // 음수 : 왼쪽 이동
-                for (int i = 1; i < -noteValue; i++) {
-                    ballons.addFirst(ballons.removeLast());
-                }
-                current = ballons.removeLast();
+//                for (int i = 1; i < -noteValue; i++) {
+//                    ballons.addFirst(ballons.removeLast());
+//                }
+//                current = ballons.removeLast();
             }
 
             sb.append(" ")
