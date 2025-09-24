@@ -18,31 +18,17 @@ import java.util.Scanner;
 
 import static com.domain.Tag.*;
 
-public class PlanApplication {
-    protected static TripSservice tripSservice;
-    protected final PlanService planService;
-    protected final Scanner scanner;
-    public final UtilService utilService = new UtilService();
-
-
-
-    public PlanApplication() {
-
-        PlanRepository planRepository = new PlanRepository(new FilePlanStorage());
-        TripRepository tripRepository = new TripRepository(new FileTripStorage());
-        planService = new PlanService(planRepository);
-        tripSservice = new TripSservice(tripRepository);
-        scanner = new Scanner(System.in);
-    }
+public class PlanApplication extends ParentsAplication{
 
     public Plan validationPlan(String planDt, int tripId) {
-            Tag tag = null;
-            System.out.println("시간을 입력해주세요 (ex) 11:25)");
-            String planTime = scanner.nextLine();
 
-            System.out.println("PLAN 내용을 입력해주세요.");
-            String planContents = scanner.nextLine();
+        System.out.println("시간을 입력해주세요 (HH:MM)");
+        String planTime = scanner.nextLine();
 
+        System.out.println("PLAN 내용을 입력해주세요.");
+        String planContents = scanner.nextLine();
+
+        while (true) {
             System.out.println("태그를 선택해 주세요.");
             System.out.println("(0) 없음");
             System.out.println("(1) 관광명소");
@@ -54,42 +40,14 @@ public class PlanApplication {
             System.out.println("(7) 숙소");
 
             int plantag = scanner.nextInt();
-            try {
-                    switch (plantag) {
-                        case 1 -> tag = SPOT;
-                        case 2 -> tag = RESTAURANT;
-                        case 4 -> tag = CAFE_DESERT;
-                        case 5 -> tag = SOPPING;
-                        case 6 -> tag = PUB_BAR;
-                        case 7 -> tag = LODGING;
-                        default -> tag = NONE_TAG;
-                    }
-            } catch (Exception e) {
-                System.out.println("오류: " + e.getMessage());
+            Tag tag = UtilService.getTag(plantag);
+            if(tag != null) {
+                return new Plan(tripId, planDt, planTime, planContents, tag);
             }
-        System.out.println("tag = " + tag);
-        return new Plan(tripId,planDt, planTime, planContents, tag);
+        }
     }
 
-    public void addPlan(int tripId) {
-        // 날짜 선택
-        String choicePlanDt = choicePlanDt(tripId);
-        System.out.println("===========" + choicePlanDt + "=============");
 
-       try {
-           Plan plan = validationPlan(choicePlanDt, tripId);
-           planService.addPlan(plan);
-
-           System.out.println("---------------MY PLAN 생성 --------------");
-           System.out.println("==" + plan.getPlanDate() + "================");
-           System.out.println("-" + plan.getPlanTime() + " | " + plan.getContent() + "(" +plan.getTag().getTagName()+ ")");
-           System.out.println();
-           System.out.println();
-
-       } catch (Exception e) {
-           System.out.println(e.getMessage());
-       }
-    }
 
     public String choicePlanDt(int tripId) {
         Trip trip = tripSservice.getTripByTripId(tripId);
@@ -122,19 +80,59 @@ public class PlanApplication {
         System.out.println("================UPDATE PLAN===================");
         String targetDt = choicePlanDt(tripId);
 
-        // 수정한 시퀀스 가져오기
-        int planId = planDateList(tripId, targetDt);
-        Plan plan = validationPlan(targetDt, tripId);
+        // 수정할 시퀀스 가져오기
+        int planId = getPlanId(tripId, targetDt);
+        try {
+            Plan plan = updateValidationPlan(planService.findPlanByPlanId(planId));
 
-        System.out.println("==========" + plan.getPlanDate() + "=============");
-        System.out.println(plan.getPlanTime() + " | " + plan.getContent() + "(" +plan.getTag()+ ")");
+            // 수정하기
+            planService.updatePlan(plan);
 
-        // 수정하기
-        planService.updatePlan(planId, plan);
+            System.out.println("==========" + plan.getPlanDate() + "=============");
+            System.out.println(plan.getPlanTime() + " | " + plan.getContent() + "(" +plan.getTag()+ ")");
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
 
     }
 
-    public int planDateList (int tripId, String planDate) {
+    public Plan updateValidationPlan(Plan plan) {
+
+        System.out.println("시간을 입력해주세요 (HH:MM) ");
+        String planTime = scanner.nextLine();
+
+        if (planTime.isEmpty()) {
+            planTime = plan.getPlanTime();
+        }
+
+        System.out.println("PLAN 내용을 입력해주세요.");
+        String planContents = scanner.nextLine();
+
+        if (planContents.isEmpty()) {
+            planContents = plan.getContent();
+        }
+
+        while (true) {
+            System.out.println("태그를 선택해 주세요.");
+            System.out.println("(0) 없음");
+            System.out.println("(1) 관광명소");
+            System.out.println("(2) 음식점");
+            System.out.println("(3) 카페/디저트");
+            System.out.println("(4) 쇼핑");
+            System.out.println("(5) 테마/체험");
+            System.out.println("(6) 술집(바)");
+            System.out.println("(7) 숙소");
+
+            int plantag = scanner.nextInt();
+            Tag tag = UtilService.getTag(plantag);
+
+            if(tag != null) {
+                return new Plan(plan.getPlanId(), plan.getTripId(), plan.getPlanDate(), planTime, planContents, tag);
+            }
+        }
+    }
+
+    public int getPlanId (int tripId, String planDate) {
         List<Plan> planList = planService.findPlanByTripIdAndPlanDate(tripId, planDate);
 
         while (true) {
@@ -146,31 +144,34 @@ public class PlanApplication {
                         + plan.getContent() + "(" +plan.getTag()+ ")");
             }
             System.out.println("(0)BACK");
-            System.out.println("수정할 PLAN의 번호를 입력해주세요.");
+            System.out.println("PLAN의 번호를 입력해주세요.");
             int choiceNum = scanner.nextInt();
-
-            System.out.println("choiceNum = " + (choiceNum - 1 ));
-            System.out.println("choiceNum = " + planList.get(choiceNum - 1).getPlanId());
 
             if (choiceNum <= 0) {
                 break;
-            } else if (choiceNum - 1 > planList.size() ) {
-                System.out.println("선택한 PLAN이 없습니다. 다시 입력해주세요.");
             }
-
-            // return planList.get(choiceNum - 1).getPlanId();
+            // check
+            return planList.get(choiceNum - 1).getPlanId();
         }
 
-       throw new IllegalArgumentException("PLAN을 찾을 수 없습니다.");
+        return -1;
     }
 
 
-    public void deletePlan() {
+    public void deletePlan(int tripId) {
         System.out.println("================DELETE PLAN===================");
-        System.out.println("날짜를 입력해주세요");
-        String planDt = scanner.nextLine();
+        String targetDt = choicePlanDt(tripId);
+        int planId = getPlanId(tripId, targetDt);
 
-        System.out.println("삭제할 PLAN의 번호를 입력해주세요");
-        int planNUm = scanner.nextInt();
+        try {
+            planService.deletePlan(planId);
+            System.out.println("삭제되었습니다.!! ");
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        System.out.println();
+        System.out.println();
+
+
     }
 }

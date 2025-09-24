@@ -14,6 +14,7 @@ public class FileTripStorage implements TripStorage {
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(FILE_PATH))) {
             oos.writeObject(tripList);
         } catch (IOException e) {
+            e.printStackTrace();
             throw new RuntimeException("파일 저장 중 오류 발생", e);
         }
     }

@@ -14,7 +14,7 @@ public class PlanService {
 
 
     public void addPlan(Plan plan) {
-        System.out.println("PlanService- addPlan");
+//        System.out.println("PlanService- addPlan");
         planRepository.insertPlan(plan);
     }
 
@@ -26,15 +26,26 @@ public class PlanService {
         return planRepository.findPlanByTripIdAndPlanDate(tripId, planDate);
     }
 
-    public void updatePlan(int planId, Plan plan) {
-        System.out.println("PlanService- updatePlan");
-        Plan beforePlan = planRepository.findPlanByPlanId(planId);
+    public void updatePlan(Plan plan) {
+//        System.out.println("PlanService- updatePlan");
+        checkPlanId(plan.getPlanId());
+        planRepository.updatePlanByPlanId(plan);
+    }
 
-        if(beforePlan != null) {
+    public Plan findPlanByPlanId(int planId) {
+        return planRepository.findPlanByPlanId(planId);
+    }
+
+    public void checkPlanId(int planId) {
+        Plan beforePlan = planRepository.findPlanByPlanId(planId);
+        if(beforePlan == null) {
             throw new  IllegalArgumentException("해당 PLAN을 찾을 수 없습니다.");
         }
 
-        planRepository.updatePlanByPlanId(planId, plan);
+    }
 
+    public void deletePlan(int planId) {
+        checkPlanId(planId);
+        planRepository.deletePlan(planId);
     }
 }

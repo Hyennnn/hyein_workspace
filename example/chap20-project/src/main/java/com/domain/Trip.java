@@ -1,9 +1,12 @@
 package com.domain;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.List;
 
-public class Trip {
+public class Trip implements Serializable {
+    private static final long serialVersionUID = 1L; // 버전 관리용 ID
+
     private int sequence;
     private String country;
     private String city;
@@ -12,6 +15,14 @@ public class Trip {
     private List<LocalDate> betweenDtList;
 
     public Trip(String country, String city, String startDt, String endDt) {
+        this.country = country;
+        this.city = city;
+        this.startDt = startDt;
+        this.endDt = endDt;
+    }
+
+    public Trip(int sequence, String country, String city, String startDt, String endDt) {
+        this.sequence = sequence;
         this.country = country;
         this.city = city;
         this.startDt = startDt;

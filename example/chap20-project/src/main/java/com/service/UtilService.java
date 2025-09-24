@@ -1,5 +1,7 @@
 package com.service;
 
+import com.domain.Tag;
+
 import javax.swing.text.DateFormatter;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -12,6 +14,12 @@ import java.util.List;
 import java.util.SimpleTimeZone;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+
+import static com.domain.Tag.*;
+import static com.domain.Tag.CAFE_DESERT;
+import static com.domain.Tag.LODGING;
+import static com.domain.Tag.PUB_BAR;
+import static com.domain.Tag.SOPPING;
 
 public class UtilService {
 
@@ -27,7 +35,23 @@ public class UtilService {
             return false;
         }
     }
+    // 정규화된 날짜 반환
+    public static String nomalDate (String date) {
+        checkDate(date);
 
+        try {
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-M-d");
+            LocalDate parsed = LocalDate.parse(date, formatter);
+
+            String normalized = parsed.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+//            System.out.println("정규화된 날짜: " + normalized);
+            return normalized;
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
+        return "";
+    }
     // 날짜 비교
     public static boolean compareDate (String startDt, String endDt) {
 
@@ -59,5 +83,35 @@ public class UtilService {
             return new ArrayList<>();
         }
 
+    }
+
+    // 태그
+    public static Tag getTag(int tagNum) {
+        switch (tagNum) {
+            case 0 -> {
+                return NONE_TAG;
+            }
+            case 1 -> {
+                return SPOT;
+            }
+            case 2 -> {
+                return RESTAURANT;
+            }
+            case 4 -> {
+                return CAFE_DESERT;
+            }
+            case 5 -> {
+                return SOPPING;
+            }
+            case 6 -> {
+                return PUB_BAR;
+            }
+            case 7 -> {
+                return LODGING;
+            }
+            default -> {
+                return null;
+            }
+        }
     }
 }

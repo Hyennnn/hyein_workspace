@@ -3,7 +3,9 @@ package com.domain;
 import java.io.Serializable;
 import java.util.Date;
 
-public class Plan {
+public class Plan implements Serializable{
+    private static final long serialVersionUID = 1L; // 버전 관리용 ID
+
     private int planId;
     private int tripId;
     private String planDate;
@@ -12,6 +14,15 @@ public class Plan {
     private Tag tag;
 
     public Plan(int tripId, String planDate, String planTime, String content, Tag tag) {
+        this.tripId = tripId;
+        this.planDate = planDate;
+        this.planTime = planTime;
+        this.content = content;
+        this.tag = tag;
+    }
+
+    public Plan(int planId, int tripId, String planDate, String planTime, String content, Tag tag) {
+        this.planId = planId;
         this.tripId = tripId;
         this.planDate = planDate;
         this.planTime = planTime;

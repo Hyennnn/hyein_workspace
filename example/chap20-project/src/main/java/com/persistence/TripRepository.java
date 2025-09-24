@@ -21,7 +21,7 @@ public class TripRepository {
     }
 
     public void insertTrip(Trip trip) {
-        System.out.println("TripRepository-insertTrip");
+//        System.out.println("TripRepository-insertTrip");
         trip.setSequence(lastSequenceNumber() +1 );
         tripList.add(trip);
         tripStorage.saveTrip(tripList);
@@ -32,7 +32,7 @@ public class TripRepository {
         return tripList.isEmpty() ? 0 : tripList.get(tripList.size()-1).getSequence();
     }
     public Trip findTripByTripId(int tripId) {
-        System.out.println("TripRepository-findTripByTripId");
+//        System.out.println("TripRepository-findTripByTripId");
         return tripList.stream()
                 .filter(trip -> trip.getSequence() == tripId)
                 .findFirst()
@@ -40,26 +40,22 @@ public class TripRepository {
     }
 
     public void deleteTrip(int choiceNum) {
-        System.out.println("TripRepository-deleteTrip");
+//        System.out.println("TripRepository-deleteTrip");
         tripList.removeIf(trip -> trip.getSequence() == choiceNum);
         tripStorage.saveTrip(tripList);
     }
 
 
-    public void updateTripByTripId(int tripId, Trip trip) {
-        System.out.println("TripRepository-updateTripByTripId");
+    public void updateTripByTripId(Trip trip) {
+//        System.out.println("TripRepository-updateTripByTripId");
 
         for(int i = 0; i < tripList.size(); i++) {
-           Trip target = tripList.get(i);
-            if(target.getSequence() == tripId) {
-                target.setCountry(trip.getCountry());
-                target.setCity(trip.getCity());
-                target.setStartDt(trip.getStartDt());
-                target.setEndDt(trip.getEndDt());
+//            System.out.println("trip = " + trip.getSequence());
+            if( tripList.get(i).getSequence() == trip.getSequence()) {
+                tripList.set(i, trip);
                 tripStorage.saveTrip(tripList);
                 break;
             }
         }
-
     }
 }

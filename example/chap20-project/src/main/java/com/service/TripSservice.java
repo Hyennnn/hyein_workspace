@@ -1,16 +1,18 @@
 package com.service;
 
+import com.persistence.PlanRepository;
 import com.persistence.TripRepository;
 import com.domain.Trip;
 
 import java.util.List;
-import java.util.stream.Stream;
 
 public class TripSservice {
     private final TripRepository tripRepository;
+    private final PlanRepository planRepository;
 
-    public TripSservice(TripRepository tripRepository) {
+    public TripSservice(TripRepository tripRepository, PlanRepository planRepository) {
         this.tripRepository = tripRepository;
+        this.planRepository = planRepository;
     }
 
     public List<Trip> findAllTrip() {
@@ -18,7 +20,7 @@ public class TripSservice {
     }
 
     public void addTrip(Trip trip) {
-        System.out.println("service- addTrip");
+//        System.out.println("service- addTrip");
         tripRepository.insertTrip(trip);
     }
 
@@ -30,6 +32,8 @@ public class TripSservice {
         checkTripId(tripId);
 
         tripRepository.deleteTrip(tripId);
+        planRepository.deleteTripId(tripId);
+
         System.out.println("삭제되었습니다.");
     }
 
@@ -40,12 +44,12 @@ public class TripSservice {
         }
     }
 
-    public void updateTrip(int tripId, Trip trip) {
-        Trip beforeTrip = tripRepository.findTripByTripId(tripId);
-        if (beforeTrip == null) {
-            throw new IllegalArgumentException("해당 TRIP을 찾을 수 없습니다.");
+    public void updateTrip(Trip trip) {
+        try {
+            checkTripId(trip.getSequence());
+            tripRepository.updateTripByTripId(trip);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
-
-        tripRepository.updateTripByTripId(tripId, trip);
     }
 }
